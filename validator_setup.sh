@@ -6,7 +6,7 @@ END_DATE="20140816"
 
 # Install packages we need for validation
 sudo apt-get update -qq
-sudo apt-get install -qq zip
+sudo apt-get install -qq zip python-tz
 git clone https://github.com/seabre/googletransitdatafeed
 
 # Generate feed_info.txt
