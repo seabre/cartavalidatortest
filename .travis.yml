@@ -3,4 +3,4 @@ python:
   - "2.7"
 before_install:
   - bash validator_setup.sh
-script: python googletransitdatafeed/python/feedvalidator.py --output=CONSOLE gtfs.zip
+script: python googletransitdatafeed/python/feedvalidator.py --output=CONSOLE --error_types_ignore_list="InvalidValue,ExpirationDate,OtherProblem,UnusedStop" gtfs.zip
